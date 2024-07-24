@@ -1,0 +1,163 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 10px;
+  background-color:white; 
+}
+
+.nav-link {
+  text-align: center; 
+  text-decoration: none;
+  color: #8b95a0;
+  font-size: 1rem;
+  padding: 8px 12px;
+
+  
+}
+
+.nav-link-clicked {
+  color: #4d535a;
+  border-bottom: 3px solid #4fa4f8;
+}
+
+
+
+main {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit,minmax(380px,1fr));
+  margin-top: 2%;
+  margin-top:3%;
+  margin-inline: 2%;
+}
+
+.card {
+  position: relative;
+  border: 0.5px solid #a4abad55;
+  border-radius: 5px;
+  padding:20px 30px ;
+  width: 350px;
+  height: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+ }
+
+ .card button {
+  position: absolute;
+  border: 2px solid #0395f7ec;
+  border-radius: 7px;
+  padding: 15px 150px;
+  background-color: white;
+  color:#0395f7ec;
+  bottom: 20px;
+  border-bottom:3px solid #0395f7ec;
+ 
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: black;
+}
+
+.card button:hover{
+  border: 2px solid #015183ec;
+  transform:scale3d(1.95);
+  color:#0064a7ec ;
+
+}
+
+@media (max-width:1000px) {
+
+  html{
+    -ms-overflow-style: none;
+   scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
+  }
+ 
+  main {
+   margin-top: 30px;
+   display:flex;  
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   width: auto;
+ 
+  
+  }
+
+  
+ 
+
+  .card {
+   position: relative;
+   border: 2px solid #a4abad55;
+   border-radius: 10px;
+   padding:20px 30px ;
+   width: 200px;
+   height: 250px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  
+  }
+
+  
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .paragraph {
+    font-size: 0.9rem;
+  }
+
+  .card button {
+    position: absolute;
+    padding: 15px 75px;
+    background-color: white;
+    color:#0395f7ec;
+    bottom: 20px;
+   
+  }
+
+   .card button:hover{
+    border: 2px solid #015183ec;
+    transform:scale3d(1.95);
+    color:#0064a7ec ;
+  
+  }
+
+  
+}
+
